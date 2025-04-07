@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 import subprocess
 import os
 
-TOKEN = "7831083294:AAHZYHhgMESyiMKz03FCdtq33rmQcTtK6O8"
+TOKEN = "8118353986:AAF5P1c8pWtfczdpNp2InHVmjLuDuJaCsak"
 
 async def start(update: Update, context):
     await update.message.reply_text("Send me an Instagram Reel link, and I'll download it for you!")
