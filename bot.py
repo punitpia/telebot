@@ -1,10 +1,11 @@
+import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import requests
 from bs4 import BeautifulSoup
 
 # Your bot token from @BotFather
-BOT_TOKEN = '7597983353:AAF3hR-roVLxWAyk-fui5gE7zcvHWKGuL4k'
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 # Function to scrape igram.io for download link
 def get_reel_download_link(instagram_url):
